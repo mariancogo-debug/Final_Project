@@ -1,0 +1,26 @@
+What is web Development 
+Web development is the act of building, creating and maintaining 
+
+3 type
+Front-end development is responsible for the aspects of a website that users see and interact with:
+
+Back-end responsible for all the aspects of a website that users do not see. also known as server-side
+
+Full-stack more holistic approach where the developers responsible 
+
+BASIC LANGUAGES OF FRONT 
+
+HTML- Hypertext Markup Language
+-text formatting language
+-standard markup language used for creating web pages and other information 
+
+1991- HTML first publish
+1995 - HTML 2.0
+
+
+<br> is for one space sa ubos
+<hr> is for Underline
+<a> is for putting link
+HOW TO PUT LINK:
+<a href="link"> Name for the link</a>
+<img src="Link of the image/copy image address"
