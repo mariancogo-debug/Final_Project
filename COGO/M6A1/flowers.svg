@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f8c9de"/>
+  <defs>
+    <g id="flower">
+      <g fill="#d95391"><ellipse cy="-60" rx="40" ry="65"/><ellipse cy="-60" rx="40" ry="65" transform="rotate(72)"/><ellipse cy="-60" rx="40" ry="65" transform="rotate(144)"/><ellipse cy="-60" rx="40" ry="65" transform="rotate(216)"/><ellipse cy="-60" rx="40" ry="65" transform="rotate(288)"/></g>
+      <circle r="32" fill="#ffe7a0"/><circle r="16" fill="#efb454"/>
+    </g>
+  </defs>
+  <path d="M80 600Q190 420 240 190M440 600Q390 390 530 260M680 600Q620 430 690 100" stroke="#68896f" stroke-width="20" fill="none"/>
+  <g fill="#88ab87"><ellipse cx="145" cy="450" rx="75" ry="28" transform="rotate(-25 145 450)"/><ellipse cx="440" cy="430" rx="75" ry="28" transform="rotate(25 440 430)"/></g>
+  <use href="#flower" transform="translate(235 185) scale(1.4)"/><use href="#flower" transform="translate(530 290) scale(1.6)"/><use href="#flower" transform="translate(690 90)"/><use href="#flower" transform="translate(80 540)"/>
+</svg>
