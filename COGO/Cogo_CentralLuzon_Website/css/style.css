@@ -1,0 +1,188 @@
+/* =========================================================
+   Discover Central Luzon - Stylesheet
+   Sections: 1 Variables | 2 Base | 3 Header/Nav | 4 Hero
+             5 Layout | 6 Gallery | 7 Destinations
+             8 Activities | 9 History | 10 Plan trip | 11 Footer
+   ========================================================= */
+
+/* ---------- 1. Variables ---------- */
+:root {
+  --color-primary: #2f4a3a;
+  --color-primary-dark: #1f3328;
+  --color-accent: #b5601b;
+  --color-sand: #f5f0e6;
+  --color-ink: #23302b;
+  --color-white: #ffffff;
+  --font-heading: Georgia, "Times New Roman", serif;
+  --font-body: "Trebuchet MS", Arial, sans-serif;
+}
+
+/* ---------- 2. Base ---------- */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: var(--color-ink);
+  background: var(--color-sand);
+}
+h1, h2, h3 { font-family: var(--font-heading); line-height: 1.25; }
+img { max-width: 100%; display: block; }
+a { color: var(--color-primary); }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* ---------- 3. Header and navigation ---------- */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.9rem 2rem;
+  background: var(--color-primary-dark);
+}
+.site-logo {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  color: var(--color-white);
+  text-decoration: none;
+}
+.main-nav { display: flex; flex-wrap: wrap; gap: 0.25rem; }
+.nav-link {
+  padding: 0.4rem 0.8rem;
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: 4px;
+}
+.nav-link:hover { background: var(--color-primary); }
+.nav-link-active { border-bottom: 3px solid var(--color-accent); }
+
+/* ---------- 4. Hero ---------- */
+.hero { position: relative; height: 70vh; min-height: 320px; }
+.hero-image { width: 110%; height: 100%; object-fit: cover; }
+.hero-text {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 3rem 2rem 2rem;
+  color: var(--color-white);
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.65));
+}
+.hero-title { margin: 0; font-size: clamp(2.2rem, 7vw, 4.2rem); }
+.hero-tagline { margin: 0.25rem 0 0; font-size: 1.25rem; }
+
+/* ---------- 5. Layout ---------- */
+.page-content { max-width: 1000px; margin: 0 auto; padding: 2rem 1.25rem 3rem; }
+.page-title {
+  margin: 0 0 1.5rem;
+  font-size: 2.5rem;
+  color: var(--color-primary-dark);
+}
+.section-heading { color: var(--color-accent); font-size: 1.6rem; }
+.intro-text, .history-section p { max-width: 70ch; }
+
+/* ---------- 6. Gallery ---------- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+.gallery-item { margin: 0; background: var(--color-white); }
+.gallery-item img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.gallery-item figcaption { padding: 0.6rem 0.8rem; font-weight: bold; }
+
+/* Clickable Tourist Spot Images */
+a img {
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Image grows when hovered */
+a img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- 7. Destinations ---------- */
+.spot-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+.spot-image { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.spot-name { margin: 0 0 0.5rem; color: var(--color-primary-dark); }
+.spot-location { color: var(--color-accent); }
+
+/* ---------- 8. Activities ---------- */
+.activity-category {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  background: var(--color-white);
+  border-left: 6px solid var(--color-accent);
+}
+.activity-icon { width: 56px; height: 56px; flex-shrink: 0; }
+.category-heading { margin: 0 0 0.5rem; color: var(--color-primary-dark); }
+
+/* ---------- 9. History ---------- */
+.list-heading { color: var(--color-primary-dark); margin-bottom: 0.25rem; }
+.culture-list li { margin-bottom: 0.4rem; }
+
+/* ---------- 10. Plan trip ---------- */
+.table-wrapper { overflow-x: auto; }
+.itinerary-table { width: 100%; border-collapse: collapse; background: var(--color-white); }
+.itinerary-table th, .itinerary-table td {
+  padding: 0.7rem 0.9rem;
+  text-align: left;
+  border: 1px solid #d9d2c3;
+  vertical-align: top;
+}
+.itinerary-table th { background: var(--color-primary); color: var(--color-white); }
+.packing-list { list-style: none; padding: 0; }
+.contact-form {
+  max-width: 560px;
+  padding: 1.5rem;
+  background: var(--color-white);
+}
+.form-group { display: flex; flex-direction: column; margin-bottom: 1rem; }
+.form-group label { margin-bottom: 0.3rem; font-weight: bold; }
+.form-group input, .form-group textarea {
+  padding: 0.6rem;
+  font: inherit;
+  border: 1px solid #b9b19f;
+  border-radius: 4px;
+}
+.send-button {
+  padding: 0.7rem 1.8rem;
+  font: inherit;
+  font-weight: bold;
+  color: var(--color-white);
+  background: var(--color-primary);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.send-button:hover { background: var(--color-primary-dark); }
+
+/* ---------- 11. Footer ---------- */
+.site-footer {
+  padding: 1.5rem 2rem;
+  text-align: center;
+  color: var(--color-white);
+  background: var(--color-primary-dark);
+}
+.site-footer p { margin: 0.2rem 0; }
+.site-footer a { color: var(--color-white); }
+
+/* ---------- Mobile ---------- */
+@media (max-width: 700px) {
+  .spot-section { grid-template-columns: 1fr; }
+  .site-header { padding: 0.9rem 1rem; }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan Your Trip | Discover Central Luzon</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ===== Site header and navigation ===== -->
+  <header class="site-header">
+    <a class="site-logo" href="index.html">Visit Central Luzon</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="destinations.html">Destinations</a>
+      <a class="nav-link" href="activities.html">Activities</a>
+      <a class="nav-link" href="history.html">History &amp; Culture</a>
+      <a class="nav-link nav-link-active" href="plan-trip.html">Plan Your Trip</a>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <h1 class="page-title">Plan Your Trip</h1>
+
+    <!-- ===== 3-day itinerary ===== -->
+    <section class="itinerary-section">
+      <h2 class="section-heading">Sample 3-day itinerary</h2>
+      <div class="table-wrapper">
+        <table class="itinerary-table">
+          <thead>
+            <tr><th>Day</th><th>Morning</th><th>Afternoon</th><th>Evening</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Day 1</td><td>Barasoain Church in Malolos</td><td>Biak-na-Bato National Park</td><td>Pastillas and dinner in San Miguel</td></tr>
+            <tr><td>Day 2</td><td>Mount Pinatubo trek from Capas</td><td>Lunch in Angeles, Pampanga (try the sisig)</td><td>Rest in Angeles or Clark</td></tr>
+            <tr><td>Day 3</td><td>Drive to Zambales, boat to Anawangin Cove</td><td>Swim and relax at the cove</td><td>Head back to Manila or Clark</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="itinerary-note">Baler and Mount Samat are farther away; each works well as a separate trip.</p>
+    </section>
+
+    <!-- ===== Travel tips ===== -->
+    <section class="tips-section">
+      <h2 class="section-heading">Travel tips</h2>
+      <ul class="tips-list">
+        <li>The dry season (roughly November to April) is best for hiking and camping.</li>
+        <li>Book a licensed guide and 4x4 for Mount Pinatubo; access is arranged locally.</li>
+        <li>Bring cash; many small towns and trailheads do not accept cards.</li>
+        <li>Surf season in Baler usually runs from around September to February.</li>
+        <li>Start treks early to avoid the midday heat.</li>
+      </ul>
+    </section>
+
+    <!-- ===== Packing checklist ===== -->
+    <section class="packing-section">
+      <h2 class="section-heading">Packing checklist</h2>
+      <ul class="packing-list">
+        <li><input type="checkbox" id="pack-sunscreen"> <label for="pack-sunscreen">Sunscreen and a hat</label></li>
+        <li><input type="checkbox" id="pack-shoes"> <label for="pack-shoes">Sturdy hiking shoes or sandals</label></li>
+        <li><input type="checkbox" id="pack-water"> <label for="pack-water">Water bottle</label></li>
+        <li><input type="checkbox" id="pack-rain"> <label for="pack-rain">Light rain jacket</label></li>
+        <li><input type="checkbox" id="pack-cash"> <label for="pack-cash">Cash and ID</label></li>
+        <li><input type="checkbox" id="pack-charger"> <label for="pack-charger">Phone charger and power bank</label></li>
+      </ul>
+    </section>
+
+    <!-- ===== Contact form ===== -->
+    <section class="contact-section">
+      <h2 class="section-heading">Ask us anything</h2>
+      <form class="contact-form" action="#" method="post">
+        <div class="form-group">
+          <label for="full-name">Full name</label>
+          <input type="text" id="full-name" name="full_name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="visit-date">Planned visit date</label>
+          <input type="date" id="visit-date" name="visit_date">
+        </div>
+        <div class="form-group">
+          <label for="travelers">Number of travelers</label>
+          <input type="number" id="travelers" name="travelers" min="1" value="1">
+        </div>
+        <div class="form-group">
+          <label for="notes">Questions or notes</label>
+          <textarea id="notes" name="notes" rows="5"></textarea>
+        </div>
+        <button class="send-button" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <p>Discover Central Luzon &mdash; a class project for Introduction to Computing</p>
+    <p>Contact: <a href="mailto:marian.cogo@lsu.edu.ph">marian.cogo@lsu.edu.ph</a> | +63 956 336 7744</p>
+  </footer>
+</body>
+</html>
